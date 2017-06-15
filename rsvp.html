@@ -1,0 +1,93 @@
+<DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <title>RSVP</title>
+  </head>
+  <nav class="navbar">
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="">Blog</a></li>
+    <li><a href="pages/wedding.html">The Wedding</a></li>
+    <li><a href="">About</a></li>
+    <li><a href="/where-weve-been.html">Travel</a></li>
+    <li id="socialIcon"><i class="fa fa-youtube-play" aria-hidden="true"></i></li>
+    <li id="socialIcon"><i class="fa fa-pinterest-p" aria-hidden="true"></i></li>
+    <li id="socialIcon"><i class="fa fa-facebook-official" aria-hidden="true"></i></li>
+    <li id="socialIcon"><i class="fa fa-instagram" aria-hidden="true"></i></li>
+
+
+
+  </ul>
+</nav>
+    <header>
+    <h1 id="headerText">Happily Ever Oswald</h1>
+
+    </header>
+    <main id="frontPage">
+  <body>
+    <div>
+      <table>
+        <thead>
+          <tr>
+            <caption id="tableTitle">
+              <h3>RSVP</h3>
+            </caption>
+            <th>Name</th>
+            <th>Attending</th>
+            <th>Dinner Option</th>
+            <th>Plus One</th>
+            <th>Contact Number</th>
+          </tr>
+        </thead>
+        <tbody id="tableArea">
+        </tbody>
+      </table>
+      <br>
+      <div id="signUpDiv">
+        <button type="submit" id="rsvpBtn">Add A Guest</button>
+      </div>
+    </div>
+    
+    <div id="formDiv">
+      <form id="rsvpForm">
+        <h3>Please RSVP Here</h3>
+        <div>
+          <label>Name:</label>
+          <input type="text" id="name" value="" class=required>
+        </div>
+        <div>
+          <label>Attending:</label><br>
+          <input type="radio" id="attend" name="attend" value="yes"> Accepts<br>
+          <input type="radio" id="attend" name="attend" value="no"> Regrets<br>
+        </div>
+        <div>
+          <label>Dinner Option:</label>
+          <select id="option" class=required>
+            <option value="Beef">Beef</option>
+            <option value="Chicken">Chicken</option>
+            <option value="Vegetarian">Vegetarian</option>
+          </select>
+        </div>
+        <div>
+          <label>Plus One:</label>
+          <input type="number" min="0" max="2" id="plus" value="" class=required>
+        </div>
+        <div>
+          <label> Contact Number:</label>
+          <input type="tel" id="phone" value="" class=required>
+        </div>
+        <div class="button">
+          <button type="submit" id="submitBtn">Submit</button>
+        </div>
+      </form>
+    </div>
+  
+    
+  </body>
+  
+  <script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+  <script> src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.16.0/jquery.validate.js"</script>
+  <script type="text/javascript" src="js/script.js"></script>
+</html>

@@ -1,149 +1,58 @@
-<!DOCTYPE html>
-<html>
+<DOCTYPE html>
+<html lang="en">
   <head>
-    <style>
-       #map {
-        height: 400px;
-        width: 100%;
-       }
-    </style>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="/styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Satisfy" rel="stylesheet">
+    <title>Happily Ever Oswald-Where we've been</title>
   </head>
-  <body>
-  
+  <body>  
+<nav class="navbar">
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="">Blog</a></li>
+    <li><a href="wedding.html">The Wedding</a></li>
+    <li><a href="">About</a></li>
+    <li><a href="where-weve-been.html">Travel</a></li>
+    <li id="socialIcon"><i class="fa fa-youtube-play" aria-hidden="true"></i></li>
+    <li id="socialIcon"><i class="fa fa-pinterest-p" aria-hidden="true"></i></li>
+    <li id="socialIcon"><i class="fa fa-facebook-official" aria-hidden="true"></i></li>
+    <li id="socialIcon"><i class="fa fa-instagram" aria-hidden="true"></i></li>
+
+
+
+  </ul>
+</nav>
+    <header>
+    <h1 id="headerText">Happily Ever Oswald</h1>
+
+    </header>
+
     <h3>Where we've been...</h3>
-<!--
-        <select name="places" form="mapMarkers" id="places">
-          <option value="Select" id="select">Please Select</option>
-          <option value="Seattle" id="seattle">Seattle, WA</option>
-          <option value="Sulphur Springs" id="sulphurSprings">Sulphur Springs, TX</option>
-          <option value="Santa Cruz" id="santaCruz">Santa Cruz, CA</option>
-          <option value="Waco" id="waco">Waco, TX</option>          
-          <option value="San Jose" id="sanJose">San Jose, CA</option>
+      <form name ="form1">
+        <select name ="sel1">
+          <option value="0" id="select">Please Select</option>
+          <option value="1" id="seattle">Seattle, WA</option>
+          <option value="2" id="sulphurSprings">Sulphur Springs, TX</option>
+          <option value="3" id="santaCruz">Santa Cruz, CA</option>
+          <option value="4" id="waco">Waco, TX</option>          
+          <option value="5" id="sanJose">San Jose, CA</option>
         </select>
-        <form id="places">
-          <button id="loadPlaces" onclick="initMap()">submit</button>
+       <button type="submit" id="selectLocation" onclick ="myFunction()">Submit</button>
         </form>
--->
-      <div id="map"></div>
-
-
-
-<form name ="form1">
-<select name ="sel1" onchange ="myFunction()">
-<option value="Select" id="select">Please Select</option>
-<option value="Seattle" id="seattle">Seattle, WA</option>
-<option value="Sulphur Springs" id="sulphurSprings">Sulphur Springs, TX</option>
-<option value="Santa Cruz" id="santaCruz">Santa Cruz, CA</option>
-<option value="Waco" id="waco">Waco, TX</option>
-<option value="San Jose" id="sanJose">San Jose, CA</option>
-  </select>
-    </form>
-    
-
-    
-<script language ="javascript">
-//      function initMap() {
-//        var seattle = {lat: 47.6062, lng: -122.3321};
-//        var map = new google.maps.Map(document.getElementById('map'), {
-//          zoom: 4,
-//          center: seattle
-//        });
-//        var marker = new google.maps.Marker({
-//          position: seattle,
-//          map: map
-//        });
-
-  
-function myfunction(){
-var theSelection = document.form1.sel1.selectedIndex
-
-if (theSelection ==0){
-function0()
-}
-elseif (theSelection ==1){
-function1()
-}
-elseif (theSelection ==2){
-function2()
-}
-elseif (theSelection ==3){
-function3()
-}
-elseif (theSelection ==4){
-function4()
-}
-elseif (theSelection ==5){
-function5()
-}
-  
-  
-}
-function0(){
-alert("Please select a place")
-}
-function1(){
-        var seattle = {lat: 47.6062, lng: -122.3321};
-        var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 4,
-          center: seattle
-        });
-        var marker = new google.maps.Marker({
-          position: seattle,
-          map: map
-        });
-}
-function2(){
-
-        var sulphurSprings = {lat: 33.1384, lng: -95.6011};
-        var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 4,
-          center: sulphurSprings
-        });
-        var marker = new google.maps.Marker({
-          position: sulphurSprings,
-          map: map
-        });
       
-}
-function3(){
-        var santaCruz = {lat: 36.9741, lng: -122.0308};
-        var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 4,
-          center: santaCruz
-        });
-        var marker = new google.maps.Marker({
-          position: santaCruz,
-          map: map
-        });
+   <div id="map"></div>
 
-}
-function4(){
-        var waco = {lat: 31.5493, lng: -97.1467};
-        var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 4,
-          center: waco
-        });
-        var marker = new google.maps.Marker({
-          position: waco,
-          map: map
-        });
 
-}
-function5(){
-        var sanJose = {lat: 37.3382, lng: -121.8863};
-        var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 4,
-          center: sanJose
-        });
-        var marker = new google.maps.Marker({
-          position: sanJose,
-          map: map
-        });
-}
-  </script>
 
     <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC_0ufQmwJW1w96IKfYv60Cj2eLImax4o0&callback=initMap">
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDwZrfO4rfW9rb3OEVLGQnxrW_ij2VnRRo
+&callback=initMap">
     </script>
-  </body>
+  <script src="https://use.fontawesome.com/b0d0cb12f8.js"></script>
+  <script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+  <script> src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.16.0/jquery.validate.js"</script>
+      <script type="text/javascript" src="js/script.js"></script>
+
+      </body>
 </html>
