@@ -1,0 +1,58 @@
+<DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="/styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Satisfy" rel="stylesheet">
+    <title>Happily Ever Oswald-Where we've been</title>
+  </head>
+  <body>  
+<nav class="navbar">
+  <ul>
+    <li><a href="/index.html">Home</a></li>
+    <li><a href="">Blog</a></li>
+    <li><a href="/pages/wedding.html">The Wedding</a></li>
+    <li><a href="">About</a></li>
+    <li><a href="/where-weve-been.html">Travel</a></li>
+    <li id="socialIcon"><i class="fa fa-youtube-play" aria-hidden="true"></i></li>
+    <li id="socialIcon"><i class="fa fa-pinterest-p" aria-hidden="true"></i></li>
+    <li id="socialIcon"><i class="fa fa-facebook-official" aria-hidden="true"></i></li>
+    <li id="socialIcon"><i class="fa fa-instagram" aria-hidden="true"></i></li>
+
+
+
+  </ul>
+</nav>
+    <header>
+    <h1 id="headerText">Happily Ever Oswald</h1>
+
+    </header>
+
+    <h3>Where we've been...</h3>
+      <form name ="form1">
+        <select name ="sel1">
+          <option value="0" id="select">Please Select</option>
+          <option value="1" id="seattle">Seattle, WA</option>
+          <option value="2" id="sulphurSprings">Sulphur Springs, TX</option>
+          <option value="3" id="santaCruz">Santa Cruz, CA</option>
+          <option value="4" id="waco">Waco, TX</option>          
+          <option value="5" id="sanJose">San Jose, CA</option>
+        </select>
+       <button type="submit" id="selectLocation" onclick ="myFunction()">Submit</button>
+        </form>
+      
+   <div id="map"></div>
+
+
+
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDwZrfO4rfW9rb3OEVLGQnxrW_ij2VnRRo
+&callback=initMap">
+    </script>
+  <script src="https://use.fontawesome.com/b0d0cb12f8.js"></script>
+  <script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+  <script> src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.16.0/jquery.validate.js"</script>
+      <script type="text/javascript" src="js/script.js"></script>
+
+      </body>
+</html>

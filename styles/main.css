@@ -1,0 +1,157 @@
+/*COLOR PALETTE
+dk grey: 7F7C7B
+coral: FF8250
+cream: FFF9F6
+brown: 7F685F
+lt grey: CCC7C5
+*/
+
+main {
+  background-color: white;
+  padding-top: 1em;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom:.5em;
+}
+
+h1, h2, h3 {
+  font-family: 'Satisfy', cursive;
+  color: #7F7C7B;
+}
+
+header h1 {
+  text-align: center;
+  font-family: 'Satisfy', cursive;
+  font-size: 4em;
+
+}
+
+h4, h5, h6, p {
+  font-family: 'Lato', sans-serif;
+}
+
+
+nav{
+  margin: 0 0 0 0;
+  position: static;
+  display: inline-block;
+  color: #7F7C7B;
+  width: 100%;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+table {
+
+  width: 80%;
+  border: .25em solid;
+  border-color: grey;
+}
+
+div{
+  margin: 1em;
+}
+
+th {
+  color: grey;
+}
+
+
+form {
+  width: 25%;
+  padding: .25em;
+}
+
+
+#countdownBox {
+  
+}
+
+#socialIcon {
+    float: right;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  align-content: flex-end;
+}
+
+#frontPage {
+  position: relative;
+  display: inline-block;
+  float: right;
+  width: 60%;
+  
+}
+
+#meetOswalds {
+  width: 25%;
+  padding-left: 2em;
+  margin: 5px;
+  position: absolute;
+  display: inline-block;
+  float: left;
+  
+}
+
+.button {
+    background-color: #FF8250;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+a {
+  color: #FF8250;
+}
+
+label {
+  display: inline-block;
+  width: 5em;
+  text-align: left;
+}
+
+input, textarea {
+  width: 100%;
+  border: 1px solid;
+  border-color: grey;
+}
+
+footer {
+  clear: both;
+  padding-top: 3em;
+  padding-left: ;
+  align-content: center;
+  
+}
+.img-circle {
+    border-radius: 50%;
+    width:  200px;
+}
